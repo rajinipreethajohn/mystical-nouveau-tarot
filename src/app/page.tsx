@@ -56,7 +56,7 @@ export default function HomePage() {
       aria-label="Draw your tarot cards"
     >
       <Image
-        src="/images/DeckCover.jpg" // Make sure DeckCover.jpg is in public/images/
+        src="/images/DeckCover.jpeg" // Make sure DeckCover.jpg is in public/images/
         alt="Deck Cover - Click to Draw Your Cards"
         width={300} // Adjust as needed for your deck cover size
         height={450} // Adjust to maintain aspect ratio
