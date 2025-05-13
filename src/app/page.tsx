@@ -1,7 +1,7 @@
 // src/app/page.tsx
 'use client'; // This directive is needed for client-side interactivity
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image'; // Import Next.js Image component
 import { TarotCard } from '@/types';
 import CardDisplay from '@/components/tarot/CardDisplay';
