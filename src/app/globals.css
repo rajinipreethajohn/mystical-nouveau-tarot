@@ -1,21 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #1a0f1f;
-  --foreground: #f0e6e6;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --background: #000000;
+  --foreground: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Cormorant Garamond', serif;
-  background-image: radial-gradient(circle at 50% 50%, #2a1f2f 0%, #1a0f1f 100%);
   min-height: 100vh;
 }
 
@@ -23,32 +18,40 @@ h1,
 h2,
 h3 {
   font-family: 'MedievalSharp', cursive;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.1rem;
   line-height: 1.6;
+  background: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .mystical-button {
   font-family: 'Cinzel', serif;
-  background: linear-gradient(135deg, #9b6e3d 0%, #e2a355 100%);
-  border: 2px solid #d4a256;
-  color: #1a0f1f;
+  background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 50%, #b38728 100%);
+  border: 2px solid #bf953f;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
 .mystical-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(226, 163, 85, 0.3);
+  box-shadow: 0 4px 12px rgba(191, 149, 63, 0.3);
 }
 
 .card-grid {
-  background: rgba(26, 15, 31, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(226, 163, 85, 0.2);
+  border: 1px solid rgba(191, 149, 63, 0.2);
   border-radius: 1rem;
   padding: 2rem;
 }
