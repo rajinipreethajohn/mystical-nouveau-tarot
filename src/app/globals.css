@@ -1,6 +1,5 @@
-
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+@import "tailwindcss";
 
 :root {
   --background: #1a0f1f;
@@ -20,7 +19,9 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'MedievalSharp', cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
