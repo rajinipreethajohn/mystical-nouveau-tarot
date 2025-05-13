@@ -1,10 +1,11 @@
 // src/app/page.tsx
 'use client'; // This directive is needed for client-side interactivity
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'; // Import Next.js Image component
 import { TarotCard } from '@/types';
 import CardDisplay from '@/components/tarot/CardDisplay';
+import { Howl } from 'howler';
 
 export default function HomePage() {
   const [drawnCards, setDrawnCards] = useState<TarotCard[]>([]);
@@ -18,6 +19,23 @@ export default function HomePage() {
     // setDrawnCards([]); // Optionally clear previous cards immediately or wait for new ones
     setShowIntro(false); // Hide intro/deck cover once drawing starts
 
+    
+        // Add shuffle sound using Howler.js
+        const shuffleSound = new Howl({
+          src: ['/sounds/shuffle.mp3', '/sounds/shuffle.ogg'],
+          loop: false,
+          html5: true // Force HTML5 Audio
+        });
+    
+        await new Promise(resolve => {
+          shuffleSound.once('end', resolve);
+          shuffleSound.play();
+        });
+    
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const delay = isMobile ? 200 : 100; // Increase delay on mobile
+    
+        await new Promise(resolve => setTimeout(resolve, delay)); // Add a delay
     try {
       const response = await fetch('/api/draw-cards');
       if (!response.ok) {
