@@ -18,12 +18,15 @@ body {
   color: var(--foreground);
   font-family: 'Cormorant Garamond', serif;
   min-height: 100vh;
-  background: url('/images/Background.jpeg') no-repeat center center fixed;
-  background-size: cover;
   position: relative;
+  overflow-x: hidden;
+  background: url('/images/Background.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-/* Add this after the body rule to create a dark overlay */
 body::before {
   content: '';
   position: fixed;
