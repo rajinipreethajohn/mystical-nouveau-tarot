@@ -16,7 +16,9 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
 
   return (
     <div className="tarot-card-display border border-yellow-600/30 rounded-lg p-4 md:p-6 shadow-xl bg-slate-800/30 backdrop-blur-sm text-center flex flex-col items-center h-full">
-      <h3 className="text-2xl font-semibold mb-3 text-yellow-200 font-serif">{card.name}</h3>
+      <div className="min-h-[4rem] flex items-center">
+        <h3 className="text-2xl font-semibold mb-3 text-yellow-200 font-serif">{card.name}</h3>
+      </div>
       <div className="image-container w-full max-w-[200px] h-auto mb-4 relative"> {/* Adjust max-w as needed */}
         <Image
           src={imagePath}
@@ -29,7 +31,7 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Example sizes prop
         />
       </div>
-      <p className="text-sm text-yellow-50/90 leading-relaxed text-left overflow-y-auto max-h-60 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-track-yellow-900/30 pr-2">
+      <p className="text-sm text-yellow-50/90 leading-relaxed text-center overflow-y-auto max-h-60 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-track-yellow-900/30 pr-2">
         {card.description}
       </p>
     </div>
