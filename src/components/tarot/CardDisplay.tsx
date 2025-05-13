@@ -29,13 +29,7 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Example sizes prop
         />
       </div>
-      <p className={`text-sm leading-relaxed text-left overflow-y-auto max-h-60 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-track-yellow-900/30 pr-2 ${
-        card.name.toLowerCase().includes('cups') ? 'text-blue-200/90' :
-        card.name.toLowerCase().includes('swords') ? 'text-emerald-200/90' :
-        card.name.toLowerCase().includes('wands') ? 'text-orange-200/90' :
-        card.name.toLowerCase().includes('pentacles') ? 'text-yellow-200/90' :
-        'text-purple-200/90' // for major arcana
-      }`}>
+      <p className="text-sm text-yellow-50/90 leading-relaxed text-left overflow-y-auto max-h-60 scrollbar-thin scrollbar-thumb-yellow-600/50 scrollbar-track-yellow-900/30 pr-2">
         {card.description}
       </p>
     </div>
