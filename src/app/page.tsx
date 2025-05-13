@@ -75,7 +75,7 @@ export default function HomePage() {
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 mb-4 font-serif tracking-wider shadow-sm">
           Mystical Nouveau Tarot
         </h1>
-        <p className="text-lg md:text-2xl text-purple-200/90">
+        <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-100 font-medievalsharp">
           Seek a Whisper from the Universe.
         </p>
       </div>
