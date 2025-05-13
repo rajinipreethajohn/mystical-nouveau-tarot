@@ -105,7 +105,7 @@ export default function HomePage() {
 
       {drawnCards.length > 0 && !isLoading && (
         <div className="mt-8 w-full max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-400 font-serif">
+          <h2 className="text-4xl md:text-5xl font-semibold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-100 font-medievalsharp">
             Your Cards Have Been Revealed:
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -121,7 +121,7 @@ export default function HomePage() {
                 setShowIntro(true);
                 setError(null);
               }}
-              className="px-8 py-3 bg-yellow-500 text-slate-900 font-semibold rounded-lg shadow-md hover:bg-yellow-400 transition-colors text-lg mr-4"
+              className="mystical-button px-8 py-3 font-semibold rounded-lg shadow-md text-lg mr-4"
             >
               Draw Again
             </button>

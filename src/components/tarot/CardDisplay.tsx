@@ -9,7 +9,7 @@ interface CardDisplayProps {
 const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
   if (!card || !card.imageFileName) {
     console.warn("CardDisplay: Card data or imageFileName is missing", card);
-    return <div className="p-4 border border-red-500 text-red-700 bg-red-100 rounded-md">Card data incomplete. Cannot display card.</div>;
+    return <div className="p-4 border border-amber-500 text-amber-200 bg-opacity-20 bg-amber-900 rounded-md font-cinzel">Card data incomplete. Cannot display card.</div>;
   }
 
   const imagePath = `/images/${card.imageFileName}`; // This will use your .jpg files
