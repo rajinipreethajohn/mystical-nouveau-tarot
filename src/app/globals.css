@@ -5,7 +5,13 @@
 :root {
   --background: #000000;
   --foreground: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7);
+}
+
+html, body {
   background-color: black;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {

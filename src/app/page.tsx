@@ -70,7 +70,7 @@ export default function HomePage() {
   );
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-8 bg-black text-yellow-50 font-sans">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-8 bg-black text-yellow-50 font-sans" style={{ backgroundColor: '#000000' }}>
       <div className="text-center mb-10 md:mb-16">
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 mb-4 font-serif tracking-wider shadow-sm">
           Mystical Nouveau Tarot
