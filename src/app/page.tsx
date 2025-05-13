@@ -58,12 +58,12 @@ export default function HomePage() {
       <Image
         src="/images/DeckCover.jpeg" // Make sure DeckCover.jpg is in public/images/
         alt="Deck Cover - Click to Draw Your Cards"
-        width={300} // Adjust as needed for your deck cover size
-        height={450} // Adjust to maintain aspect ratio
+        width={200} // Adjust as needed for your deck cover size
+        height={300} // Adjust to maintain aspect ratio
         priority // Load this image eagerly as it's central
         className="rounded-lg shadow-2xl group-hover:shadow-yellow-500/50 transition-shadow"
       />
-      <p className="text-center mt-4 text-xl font-medium text-yellow-200 group-hover:text-yellow-100 transition-colors">
+      <p className="text-center mt-4 text-xl font-medium text-yellow-200 group-hover:text-yellow-100 transition-colors bg-black/50 font-medievalsharp text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 font-serif tracking-wider shadow-sm">
         Click the Deck to Draw Your Cards
       </p>
     </div>
@@ -75,7 +75,7 @@ export default function HomePage() {
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 mb-4 font-serif tracking-wider shadow-sm">
           Mystical Nouveau Tarot
         </h1>
-        <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 font-serif tracking-wider shadow-sm">
+        <p className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 font-serif tracking-wider shadow-sm font-medievalsharp mb-4">
           Seek a Whisper from the Universe.
         </p>
       </div>

@@ -34,7 +34,7 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
@@ -45,18 +45,24 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'MedievalSharp', cursive;
   background: linear-gradient(45deg, #bf953f, #fcf6ba, #b38728, #fbf5b7);
   -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'MedievalSharp', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-clip: text;
   color: transparent;
+}
+
+.font-medievalsharp {
+  font-family: 'MedievalSharp', cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -105,6 +111,7 @@ p {
 .card-grid {
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   border: 1px solid rgba(191, 149, 63, 0.2);
   border-radius: 1rem;
   padding: 2rem;
