@@ -46,8 +46,11 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
         <h3 className="mt-4 text-lg font-semibold text-yellow-100 font-cinzel">
           {card.name}
         </h3>
-      </div>
-    </div>
+        <p className="mt-2 text-sm text-yellow-200 md:hidden italic animate-pulse">
+      Tap to read more
+        </p>
+          </div>
+        </div>
   );
 };
 
