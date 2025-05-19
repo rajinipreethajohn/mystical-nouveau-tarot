@@ -1,11 +1,12 @@
 // src/app/page.tsx
 'use client'; // This directive is needed for client-side interactivity
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'; // Import Next.js Image component
 import { TarotCard } from '@/types';
 import CardDisplay from '@/components/tarot/CardDisplay';
 import { Howl } from 'howler';
+
 
 export default function HomePage() {
   const [drawnCards, setDrawnCards] = useState<TarotCard[]>([]);
@@ -13,55 +14,65 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
   const [showIntro, setShowIntro] = useState(true); // To control visibility of intro/deck cover
 
-  const handleDrawCards = async () => {
-    setIsLoading(true);
-    setError(null);
-    // setDrawnCards([]); // Optionally clear previous cards immediately or wait for new ones
-    setShowIntro(false); // Hide intro/deck cover once drawing starts
-
-    
-        // Add shuffle sound using Howler.js
-        const shuffleSound = new Howl({
-          src: ['/sounds/shuffle.mp3', '/sounds/shuffle.ogg'],
-          loop: false,
-          html5: true // Force HTML5 Audio
-        });
-    
-        await new Promise(resolve => {
-          shuffleSound.once('end', resolve);
-          shuffleSound.play();
-        });
-    
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        const delay = isMobile ? 200 : 100; // Increase delay on mobile
-    
-        await new Promise(resolve => setTimeout(resolve, delay)); // Add a delay
-    try {
-      const response = await fetch('/api/draw-cards');
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.details || `Failed to fetch cards: ${response.statusText}`);
-      }
-      const cards: TarotCard[] = await response.json();
-      
-      if (!cards || cards.length === 0) {
-        setError("No cards were drawn. The deck might be empty or an API issue occurred.");
-        setDrawnCards([]); // Ensure drawnCards is empty on error
-      } else if (cards.length < 3) {
-        setError(`Only ${cards.length} card(s) drawn. The deck data might be incomplete. Displaying available cards.`);
-        setDrawnCards(cards);
-      } else {
-        setDrawnCards(cards);
-      }
-
-    } catch (err) {
-      console.error(err);
-      setError(err instanceof Error ? err.message : 'An unknown error occurred while drawing cards.');
-      setDrawnCards([]); // Ensure drawnCards is empty on error
-    } finally {
-      setIsLoading(false);
+useEffect(() => {
+    const stored = sessionStorage.getItem('drawnCards');
+    if (stored && drawnCards.length === 0 && !isLoading && !error) {
+      setDrawnCards(JSON.parse(stored));
+      setShowIntro(false);
     }
-  };
+  }, []);
+
+  const handleDrawCards = async () => {
+  setIsLoading(true);
+  setError(null);
+  setShowIntro(false); // Hide intro/deck cover once drawing starts
+
+  const shuffleSound = new Howl({
+    src: ['/sounds/shuffle.mp3', '/sounds/shuffle.ogg'],
+    loop: false,
+    html5: true
+  });
+
+  await new Promise(resolve => {
+    shuffleSound.once('end', resolve);
+    shuffleSound.play();
+  });
+
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const delay = isMobile ? 200 : 100;
+
+  await new Promise(resolve => setTimeout(resolve, delay));
+
+  try {
+    const response = await fetch('/api/draw-cards');
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.details || `Failed to fetch cards: ${response.statusText}`);
+    }
+
+    const cards: TarotCard[] = await response.json();
+
+    if (!cards || cards.length === 0) {
+      setError("No cards were drawn. The deck might be empty or an API issue occurred.");
+      setDrawnCards([]);
+    } else if (cards.length < 3) {
+      setError(`Only ${cards.length} card(s) drawn. The deck data might be incomplete. Displaying available cards.`);
+      setDrawnCards(cards);
+    } else {
+      setDrawnCards(cards);
+
+      // ✅ Store drawn cards in sessionStorage
+      sessionStorage.setItem('drawnCards', JSON.stringify(cards));
+    }
+
+  } catch (err) {
+    console.error(err);
+    setError(err instanceof Error ? err.message : 'An unknown error occurred while drawing cards.');
+    setDrawnCards([]);
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   // Component for the clickable Deck Cover
   const DeckCoverArt = () => (
