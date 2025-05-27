@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { TarotCard } from '@/types';
 import CardDisplay from '@/components/tarot/CardDisplay';
 import { Howl } from 'howler';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function HomePage() {
   const [drawnCards, setDrawnCards] = useState<TarotCard[]>([]);
@@ -30,7 +31,6 @@ export default function HomePage() {
   const handleDrawCards = async () => {
     setIsLoading(true);
     setError(null);
-    setShowIntro(false);
 
     const shuffleSound = new Howl({
       src: ['/sounds/shuffle.mp3', '/sounds/shuffle.ogg'],
@@ -43,8 +43,10 @@ export default function HomePage() {
       shuffleSound.play();
     });
 
-    const delay = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? 200 : 100;
-    await new Promise(resolve => setTimeout(resolve, delay));
+    await new Promise(resolve => setTimeout(resolve, 200)); // small delay
+    await new Promise(resolve => setTimeout(resolve, 1000)); // animation duration
+
+    setShowIntro(false); // trigger deck exit
 
     try {
       const response = await fetch('/api/draw-cards');
@@ -64,13 +66,10 @@ export default function HomePage() {
           if (typeof card.slug === 'string') {
             acc[card.slug] = false;
           }
-
           return acc;
         }, {});
 
-
         setFlippedStates(initialFlipped);
-
         sessionStorage.setItem('drawnCards', JSON.stringify(cards));
         sessionStorage.setItem('flippedStates', JSON.stringify(initialFlipped));
       }
@@ -86,13 +85,18 @@ export default function HomePage() {
   const handleFlip = (slug: string) => {
     setFlippedStates(prev => {
       const updated = { ...prev, [slug]: true };
-      sessionStorage.setItem('flippedStates', JSON.stringify(updated)); // 💾 persist on every flip
+      sessionStorage.setItem('flippedStates', JSON.stringify(updated));
       return updated;
     });
   };
 
   const DeckCoverArt = () => (
-    <div
+    <motion.div
+      key="deck"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0, rotate: [0, -5, 5, 0] }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
       className="deck-cover my-8 cursor-pointer transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col items-center group"
       onClick={handleDrawCards}
       role="button"
@@ -111,7 +115,7 @@ export default function HomePage() {
       <p className="text-center mt-4 text-xl font-medium text-yellow-200 group-hover:text-yellow-100 transition-colors bg-black/50 font-medievalsharp text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-400 to-yellow-500 font-serif tracking-wider shadow-sm">
         Click the Deck to Draw Your Cards
       </p>
-    </div>
+    </motion.div>
   );
 
   return (
@@ -125,7 +129,9 @@ export default function HomePage() {
         </p>
       </div>
 
-      {showIntro && !isLoading && drawnCards.length === 0 && <DeckCoverArt />}
+      <AnimatePresence>
+        {showIntro && !isLoading && drawnCards.length === 0 && <DeckCoverArt />}
+      </AnimatePresence>
 
       {isLoading && (
         <div className="flex flex-col items-center justify-center h-64">
@@ -154,7 +160,12 @@ export default function HomePage() {
       )}
 
       {drawnCards.length > 0 && !isLoading && (
-        <div className="mt-8 w-full max-w-5xl">
+        <motion.div
+          className="mt-8 w-full max-w-5xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
           <h2 className="text-4xl md:text-5xl font-semibold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-100 font-medievalsharp">
             Your Cards Have Been Revealed:
           </h2>
@@ -188,7 +199,7 @@ export default function HomePage() {
               Unlock Combined Message (Soon!)
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
     </main>
   );
