@@ -1,56 +1,61 @@
-'use client'; // ⬅️ VERY important at the top
+'use client';
 
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'; // ⬅️ CORRECT for App Router
+import { useRouter } from 'next/navigation';
 import { TarotCard } from '@/types';
-
 
 interface CardDisplayProps {
   card: TarotCard;
+  isFlipped: boolean;
+  onFlip: () => void;
 }
 
-const CardDisplay: React.FC<CardDisplayProps> = ({ card }) => {
+const CardDisplay: React.FC<CardDisplayProps> = ({ card, isFlipped, onFlip }) => {
   const router = useRouter();
 
-  if (!card || !card.imageFileName) {
-    console.warn("CardDisplay: Card data or imageFileName is missing", card);
-    return (
-      <div className="p-4 border border-amber-500 text-amber-200 bg-amber-900 rounded-md font-cinzel">
-        Card data incomplete.
-      </div>
-    );
-  }
-
-  const imagePath = `/images/${card.imageFileName}`;
+  const frontImagePath = `/images/${card.imageFileName}`;
+  const backImagePath = `/images/card-back.jpeg`;
 
   const handleClick = () => {
-    router.push(`/card/${card.slug}`); // Ensure slug is unique like 'nine-of-wands'
+    if (!isFlipped) {
+      onFlip();
+    } else {
+      router.push(`/card/${card.slug}`);
+    }
   };
 
   return (
     <div
       onClick={handleClick}
-      className="cursor-pointer hover:scale-105 transition-transform duration-300"
+      className="cursor-pointer transition-transform duration-500 hover:scale-105"
     >
       <div className="flex flex-col items-center text-center">
-        <div className="image-container w-full max-w-[200px] h-auto mx-auto relative">
+        <div className="image-container w-full max-w-[250px] h-auto mx-auto relative">
           <Image
-            src={imagePath}
+            src={isFlipped ? frontImagePath : backImagePath}
             alt={card.name}
             width={250}
             height={438}
-            className="rounded-md shadow-xl"
+            className="rounded-md shadow-xl transition-all duration-500"
             priority
           />
         </div>
-        <h3 className="mt-4 text-lg font-semibold text-yellow-100 font-cinzel">
-          {card.name}
-        </h3>
-        <p className="mt-2 text-sm text-yellow-200 md:hidden italic animate-pulse">
-      Tap to read more
-        </p>
-          </div>
-        </div>
+        {isFlipped ? (
+          <>
+            <h3 className="mt-4 text-lg font-semibold text-yellow-100 font-cinzel">
+              {card.name}
+            </h3>
+            <p className="mt-2 text-sm text-yellow-200 md:hidden italic animate-pulse">
+              Tap to read more
+            </p>
+          </>
+        ) : (
+          <p className="mt-4 text-sm text-yellow-300 italic animate-pulse">
+            Tap to Reveal
+          </p>
+        )}
+      </div>
+    </div>
   );
 };
 
