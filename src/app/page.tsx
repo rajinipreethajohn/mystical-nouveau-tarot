@@ -163,8 +163,8 @@ export default function HomePage() {
               <CardDisplay
                 key={card.slug}
                 card={card}
-                isFlipped={!!flippedStates[card.slug]}
-                onFlip={() => handleFlip(card.slug)}
+                isFlipped={!!flippedStates[card.slug!]}
+                onFlip={() => handleFlip(card.slug!)}
               />
             ))}
           </div>
