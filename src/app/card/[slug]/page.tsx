@@ -35,19 +35,22 @@ export default function CardDetailPage() {
         />
       </div>
 
-      {card.elementAstrology ? (
-        <>
-          <Section title="Element & Astrology" text={card.elementAstrology} />
-          <Section title="Love & Relationships" text={card.love} />
-          <Section title="Career & Ambitions" text={card.career} />
-          <Section title="Life & Inner World" text={card.life} />
-          <Section title="Health & Well-being" text={card.health} />
-          <Section title="Mystic Message" text={`“${card.mysticMessage}”`} italic />
-          <Section title="Daily Journal Prompt" text={card.journalPrompt} />
-        </>
-      ) : (
-        <Section title="Card Meaning" text={card.description} />
-      )}
+      {/* 🌙 Content wrapper to block vine background */}
+      <div className="description-bg p-6 md:p-10 rounded-xl shadow-xl space-y-8">
+        {card.elementAstrology ? (
+          <>
+            <Section title="Element & Astrology" text={card.elementAstrology} />
+            <Section title="Love & Relationships" text={card.love} />
+            <Section title="Career & Ambitions" text={card.career} />
+            <Section title="Life & Inner World" text={card.life} />
+            <Section title="Health & Well-being" text={card.health} />
+            <Section title="Mystic Message" text={`“${card.mysticMessage}”`} italic />
+            <Section title="Daily Journal Prompt" text={card.journalPrompt} />
+          </>
+        ) : (
+          <Section title="Card Meaning" text={card.description} />
+        )}
+      </div>
 
       {/* 🔙 Back Button */}
       <div className="mt-10 text-center">
@@ -58,8 +61,6 @@ export default function CardDetailPage() {
           ← Back to Revealed Cards
         </button>
       </div>
-
-      
     </main>
   );
 }
