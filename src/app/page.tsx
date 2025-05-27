@@ -61,9 +61,13 @@ export default function HomePage() {
         setDrawnCards(cards);
 
         const initialFlipped = cards.reduce((acc: Record<string, boolean>, card) => {
-          acc[card.slug] = false;
+          if (typeof card.slug === 'string') {
+            acc[card.slug] = false;
+          }
+
           return acc;
         }, {});
+
 
         setFlippedStates(initialFlipped);
 
