@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mysticaltarotgarden.netlify.app/sitemap.xml
