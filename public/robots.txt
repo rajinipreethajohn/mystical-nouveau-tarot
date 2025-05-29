@@ -4,4 +4,4 @@ Allow: /
 User-agent: Googlebot
 Disallow:
 
-Sitemap: https://mysticaltarotgarden.netlify.app/sitemap-static.xml
+Sitemap: https://mysticaltarotgarden.netlify.app/sitemap.xml
