@@ -243,4 +243,3 @@
 <loc>https://mysticaltarotgarden.netlify.app/card/king-of-pentacles</loc>
 </url>
 </urlset>
-#gpt-text-summarize-button { display: none; background-color: #10a37f; border: 0; color: white; text-align: center; align-items: center; justify-content: center; cursor: pointer; padding: 0.3em; border-radius: 50%; z-index: 9999; position: absolute; box-shadow: rgba(0, 0, 0, 0.4) 3px 0 5px 0; } #gpt-text-summarize-button:hover { background-color: #14b384; } #gpt-text-summarize-button > img { width: 2em; height: 2em; }
