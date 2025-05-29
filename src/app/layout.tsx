@@ -1,6 +1,8 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "Mystical Nouveau Tarot",
@@ -81,7 +83,9 @@ export default function RootLayout({
         )}
       </head>
       <body className="antialiased">
-        {children}
+        <NavBar />
+        <div className="pt-20">{children}</div> {/* to prevent content underlap */}
+        <Footer />
       </body>
     </html>
   );
