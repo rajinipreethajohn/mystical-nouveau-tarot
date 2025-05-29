@@ -1,13 +1,8 @@
-// src/app/layout.tsx
-import type { Metadata } from "next";
-import "./globals.css";
-import NavBar from '@/components/NavBar';
-import Footer from '@/components/Footer';
 
-export const metadata: Metadata = {
-  title: "Mystical Nouveau Tarot",
-  description: "Experience the magic of tarot through mystical nouveau art",
-};
+import "./globals.css";
+import NavBar from "@/components/NavBar";
+import ClientWrapper from "../components/ClientWrapper";
+import { metadata } from "./metadata";
 
 export default function RootLayout({
   children,
@@ -22,8 +17,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
-
-
         <link rel="canonical" href="https://mysticaltarotgarden.netlify.app/" />
 
         <title>Mystical Nouveau Tarot</title>
@@ -46,6 +39,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://mysticaltarotgarden.netlify.app/images/mystical-nouveau-tarot-cover.jpg" />
         <meta name="keywords" content="tarot, tarot reading, major arcana, tarot cards, mystical tarot, boho tarot deck, daily tarot, free tarot reading" />
 
+        {/* 🧠 Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: `
             {
@@ -84,8 +78,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <NavBar />
-        <div className="pt-20">{children}</div> {/* to prevent content underlap */}
-        <Footer />
+        <div className="pt-20">{children}</div>
+        <ClientWrapper />
       </body>
     </html>
   );

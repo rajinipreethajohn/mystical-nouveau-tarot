@@ -43,10 +43,10 @@ export default function HomePage() {
       shuffleSound.play();
     });
 
-    await new Promise(resolve => setTimeout(resolve, 200)); // small delay
-    await new Promise(resolve => setTimeout(resolve, 1000)); // animation duration
+    await new Promise(resolve => setTimeout(resolve, 200));
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
-    setShowIntro(false); // trigger deck exit
+    setShowIntro(false);
 
     try {
       const response = await fetch('/api/draw-cards');
@@ -59,6 +59,8 @@ export default function HomePage() {
       if (!cards || cards.length === 0) {
         setError('No cards were drawn. The deck might be empty or an API issue occurred.');
         setDrawnCards([]);
+        sessionStorage.setItem('drawnCards', JSON.stringify([]));
+        window.dispatchEvent(new Event('storage'));
       } else {
         setDrawnCards(cards);
 
@@ -72,6 +74,7 @@ export default function HomePage() {
         setFlippedStates(initialFlipped);
         sessionStorage.setItem('drawnCards', JSON.stringify(cards));
         sessionStorage.setItem('flippedStates', JSON.stringify(initialFlipped));
+        window.dispatchEvent(new Event('storage'));
       }
     } catch (err) {
       console.error(err);
@@ -151,6 +154,7 @@ export default function HomePage() {
               setDrawnCards([]);
               setFlippedStates({});
               sessionStorage.clear();
+              window.dispatchEvent(new Event('storage'));
             }}
             className="mt-4 px-6 py-2 bg-yellow-500 text-slate-900 font-semibold rounded-md hover:bg-yellow-400 transition-colors"
           >
@@ -187,6 +191,7 @@ export default function HomePage() {
                 setError(null);
                 setFlippedStates({});
                 sessionStorage.clear();
+                window.dispatchEvent(new Event('storage'));
               }}
               className="mystical-button px-8 py-3 font-semibold rounded-lg shadow-md text-lg mr-4"
             >
