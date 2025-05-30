@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
           alt: `${card.name} tarot card`
         }
       ],
-      type: 'website'
+      type: 'article'
     },
     twitter: {
       card: 'summary_large_image',
@@ -39,12 +39,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// ✅ IMPORTANT: Await the `params` object inside the function
+// ✅ THIS is your default export — a valid React component
 export default async function CardPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const card = allTarotCards.find(c => c.slug === slug);
 
-  if (!card) return null;
+  if (!card) return <div>Card not found.</div>;
 
   return <CardDetailClient card={card} />;
 }
