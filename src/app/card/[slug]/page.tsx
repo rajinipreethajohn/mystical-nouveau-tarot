@@ -2,7 +2,7 @@ import { allTarotCards } from '@/lib/tarot-data';
 import CardDetailClient from './CardDetailClient';
 import { Metadata } from 'next';
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const card = allTarotCards.find(c => c.slug === params.slug);
 
   if (!card) {
@@ -38,8 +38,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function CardPage({ params }: { params: { slug: string } }) {
-
+// ✅ MAKE THIS ASYNC TOO!
+export default async function CardPage({ params }: { params: { slug: string } }) {
   const card = allTarotCards.find(c => c.slug === params.slug);
   if (!card) return null;
 
