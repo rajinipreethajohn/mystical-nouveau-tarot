@@ -14,4 +14,5 @@ export interface TarotCard {
   mysticMessage?: string;
   journalPrompt?: string;
   slug?: string; // ← Add this too for routing
+  metaDescription?: string;
 }

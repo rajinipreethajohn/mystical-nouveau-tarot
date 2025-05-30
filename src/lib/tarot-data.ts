@@ -14,7 +14,9 @@ export const allTarotCards: TarotCard[] = [
   life: "This card symbolizes your inner child calling you to play, explore, and trust the journey, even when the path isn’t visible.",
   health: "Try something new that brings joy to your body — movement, food, nature. Health thrives when it’s light-hearted.",
   mysticMessage: "Leap, and the net will appear.",
-  journalPrompt: "What would I do today if I truly trusted the universe to catch me?"
+  journalPrompt: "What would I do today if I truly trusted the universe to catch me?",
+  metaDescription: "Discover the meaning of The Fool tarot card – a symbol of freedom, innocence, and new beginnings. Step into life's adventure with curiosity and trust."
+
 },
   {
   id: "the-magician",
@@ -29,7 +31,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a time of awakening your potential. You’re being called to harness your talents and inner wisdom. The Magician is a mirror reminding you: you already have what you need.",
   health: "Focus and balance are key. Use both natural and mindful practices to restore energy. You're encouraged to actively participate in your healing — mentally and physically.",
   mysticMessage: "As within, so without.",
-  journalPrompt: "What inner resource am I ready to bring forward into the world today?"
+  journalPrompt: "What inner resource am I ready to bring forward into the world today?",
+  metaDescription: "Uncover The Magician tarot card meaning – manifestation, power, and conscious creation. You already hold the tools to shape your destiny."
 },
 {
   id: "the-high-priestess",
@@ -44,7 +47,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a card of deep inner knowing. You're being drawn to sacred wisdom, dreams, or mysticism. Answers are found through silence and sacred reflection.",
   health: "Focus on hormonal balance, rest, and intuitive healing. Energetic shifts are subtle — honor your body’s rhythms.",
   mysticMessage: "The truth lies beneath the surface.",
-  journalPrompt: "What is my inner voice whispering today — and how can I honor it?"
+  journalPrompt: "What is my inner voice whispering today — and how can I honor it?",
+  metaDescription: "Explore the meaning of The High Priestess – a symbol of intuition, mystery, and sacred inner knowing. Trust your inner voice."
 },
 {
   id: "the-empress",
@@ -59,7 +63,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are abundant by nature. Embrace pleasure, nature, and slowness. The Empress reminds you that you are worthy of comfort and joy — without earning it.",
   health: "Nourishment is your medicine. Rest, whole foods, physical touch, and self-kindness will restore your energy.",
   mysticMessage: "Abundance flows when you nurture it with love.",
-  journalPrompt: "What does it mean for me to feel deeply nourished — body, mind, and soul?"
+  journalPrompt: "What does it mean for me to feel deeply nourished — body, mind, and soul?",
+  metaDescription: "The Empress tarot card represents fertility, beauty, and divine creativity. Embrace abundance in love, life, and nature."
 },
 {
   id: "the-emperor",
@@ -74,7 +79,9 @@ export const allTarotCards: TarotCard[] = [
   life: "Bring order to chaos. Create strong foundations. This is about boundaries, discipline, and showing up for yourself with unwavering resolve.",
   health: "Build strength — physically and mentally. Focus on routines, core health, and protective habits. Small disciplined acts create lasting power.",
   mysticMessage: "True power lies in responsible leadership.",
-  journalPrompt: "Where in my life do I need to step up and lead with grounded authority?"
+  journalPrompt: "Where in my life do I need to step up and lead with grounded authority?",
+  metaDescription: "The Emperor stands for structure, leadership, and stability. Step into your power and create order from chaos."
+
 },
 {
   id: "the-hierophant",
@@ -89,7 +96,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re being called to explore spiritual beliefs or ancestral wisdom. What rituals, stories, or sacred systems shaped you? There’s guidance waiting in the old ways.",
   health: "Rely on established healing systems or expert advice. Structure, consistency, and patience are key. Long-term well-being comes through spiritual alignment too.",
   mysticMessage: "Sacred truth is passed through lineage and lived devotion.",
-  journalPrompt: "What ancient or inherited wisdom feels most alive and true to me right now?"
+  journalPrompt: "What ancient or inherited wisdom feels most alive and true to me right now?",
+  metaDescription: "Discover the meaning of The Hierophant – tradition, spiritual wisdom, and sacred teachings. Seek alignment through mentorship or ritual."
 },
 
   {
@@ -105,7 +113,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card mirrors your relationship to yourself. Heal inner divides, embrace wholeness, and trust your inner compass.",
   health: "Balance is key — emotionally, hormonally, and energetically. Reconnect with your body and inner voice. Are your habits in harmony with your heart?",
   mysticMessage: "Love is the great teacher. Every choice is an echo of what you value.",
-  journalPrompt: "What does loving alignment look like — with myself, and with others?"
+  journalPrompt: "What does loving alignment look like — with myself, and with others?",
+  metaDescription: "The Lovers tarot card reflects union, choice, and harmony. Explore deep connection and the power of aligned decisions."
 },
 {
   id: "the-chariot",
@@ -120,7 +129,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are being asked to take the reins. Self-control and intentional motion are your superpowers right now. Don’t get pulled off track.",
   health: "Movement matters — literal or energetic. Cleanse stuck emotions, focus your will, and don’t ignore signs from your body about imbalance.",
   mysticMessage: "Your will is the chariot. Hold the reins and ride.",
-  journalPrompt: "What part of me is asking to be directed with courage and clarity?"
+  journalPrompt: "What part of me is asking to be directed with courage and clarity?",
+  metaDescription: "The Chariot speaks of focused will, triumph, and determination. Take control of your path and steer it with purpose."
 },
 {
   id: "strength",
@@ -135,7 +145,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card celebrates your resilience. You’ve come far, and you’ve done it with heart. Keep going — but soften when needed.",
   health: "Support your nervous system. Choose practices that build quiet, steady strength — yoga, breathwork, rest. Be kind to your inner lion.",
   mysticMessage: "Strength is love in motion — patient, grounded, and full of grace.",
-  journalPrompt: "Where am I being asked to soften — and still stand strong?"
+  journalPrompt: "Where am I being asked to soften — and still stand strong?",
+  metaDescription: "Strength represents inner resilience, compassion, and courage. Power comes through patience and self-trust."
 },
 {
   id: "the-hermit",
@@ -150,7 +161,9 @@ export const allTarotCards: TarotCard[] = [
   life: "This is your soul’s quiet retreat. Go within. The answers you seek will glow softly from within your own lantern of truth.",
   health: "Nourish solitude, stillness, and slowness. Healing comes from retreat, spiritual focus, and simplifying your routines.",
   mysticMessage: "Go within. The light you seek is already in your hand.",
-  journalPrompt: "What wisdom have I been carrying all along, but not fully trusting?"
+  journalPrompt: "What wisdom have I been carrying all along, but not fully trusting?",
+  metaDescription: "The Hermit invites solitude, introspection, and spiritual insight. Step inward to find your guiding light."
+
 },
 {
   id: "wheel-of-fortune",
@@ -165,7 +178,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Life moves in cycles. You’re not stuck — just mid-turn. Trust the flow of time and remember that each phase is meaningful, even if unclear now.",
   health: "You may feel ups and downs — focus on rhythm, rest, and recalibration. Trust your body’s wisdom to adjust through cycles of growth and release.",
   mysticMessage: "Change is the only constant — dance with the wheel.",
-  journalPrompt: "What cycle am I completing — and what new one is ready to begin?"
+  journalPrompt: "What cycle am I completing — and what new one is ready to begin?",
+  metaDescription: "Wheel of Fortune symbolizes fate, luck, and life’s turning cycles. Embrace change and trust the unfolding journey."
 },
 {
   id: "justice",
@@ -180,7 +194,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re being asked to weigh your decisions with clarity. Truth and consequences are intertwined. Act with conscious awareness of cause and effect.",
   health: "Seek alignment — mentally, physically, emotionally. Small imbalances can ripple. Focus on lifestyle corrections that restore inner harmony.",
   mysticMessage: "Truth holds the sword and the scales — speak and act with clarity.",
-  journalPrompt: "What truth within me is asking to be honored — regardless of outcome?"
+  journalPrompt: "What truth within me is asking to be honored — regardless of outcome?",
+  metaDescription: "Justice tarot card calls for truth, fairness, and accountability. What you give, you receive."
 },
 {
   id: "the-hanged-man",
@@ -195,7 +210,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Surrender is your initiation. Shift your perspective. The world looks different when you stop trying to shape it, and simply see.",
   health: "Focus on stress release, rest, and nervous system repair. A mindset shift or energy healing could bring deep results.",
   mysticMessage: "Let go. The wisdom you seek is waiting in the pause.",
-  journalPrompt: "What must I release control of, in order to gain true understanding?"
+  journalPrompt: "What must I release control of, in order to gain true understanding?",
+  metaDescription: "The Hanged Man reveals surrender, new perspective, and spiritual pause. Growth blooms in stillness."
 },
 {
   id: "death",
@@ -210,7 +226,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are shedding skin. Do not fear the void between death and rebirth. This is sacred compost — your next self is already emerging.",
   health: "Focus on detoxification, grief processing, and letting go. Something old is leaving your system. Make space for renewal.",
   mysticMessage: "All endings are disguised beginnings. Let the old pass with reverence.",
-  journalPrompt: "What must I fully release in order to truly transform?"
+  journalPrompt: "What must I fully release in order to truly transform?",
+  metaDescription: "Death marks endings, transformation, and rebirth. Let go of what no longer serves to allow space for what will."
 },
 {
   id: "temperance",
@@ -225,7 +242,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are alchemizing. Opposites within you are finding harmony. This is a time of inner integration and calm expansion.",
   health: "Balance and moderation are medicine. Focus on routines that support harmony — no extremes. Rehydration and recalibration are key.",
   mysticMessage: "You are the vessel. Let all things blend in sacred proportion.",
-  journalPrompt: "What area of my life is asking for healing through balance?"
+  journalPrompt: "What area of my life is asking for healing through balance?",
+  metaDescription: "Temperance brings balance, healing, and integration. Blend dualities into harmonious flow.",
 },
 {
   id: "the-devil",
@@ -240,7 +258,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are not trapped — only conditioned. Your chains are illusions you can break. Face your shadows and reclaim your inner power.",
   health: "Check for dependencies — substances, screens, stimulants, or thought patterns. Healing starts with honest confrontation.",
   mysticMessage: "What you fear owns you. Face it — and set yourself free.",
-  journalPrompt: "What inner or outer chain am I ready to break — and who am I without it?"
+  journalPrompt: "What inner or outer chain am I ready to break — and who am I without it?",
+  metaDescription: "The Devil represents temptation, shadow, and self-liberation. What binds you – and how can you break free?"
 },
 {
   id: "the-tower",
@@ -255,7 +274,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is sacred upheaval. A lightning strike from the divine. Let what must fall — fall. And from the rubble, rise real truth.",
   health: "Emotional breakdowns may precede breakthroughs. Rest, breathe, and rebuild. Remove toxic inputs — they may be the root.",
   mysticMessage: "Let it fall. What collapses clears space for what is unshakably true.",
-  journalPrompt: "What truth has been trying to break through — even if it shatters my current structure?"
+  journalPrompt: "What truth has been trying to break through — even if it shatters my current structure?",
+  metaDescription: "The Tower shatters illusions to spark truth and breakthrough. Though chaotic, its storm clears the way forward."
 },
 {
   id: "the-star",
@@ -270,7 +290,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are the star — a soul with divine light. Stay open to inspiration. Miracles follow when you trust the bigger picture.",
   health: "Emotional healing, rehydration, and energetic clarity are emphasized. Let nature, stillness, and faith support your restoration.",
   mysticMessage: "You are never alone. The cosmos sings to your soul — listen.",
-  journalPrompt: "Where am I being invited to believe again — even after the storm?"
+  journalPrompt: "Where am I being invited to believe again — even after the storm?",
+  metaDescription: "The Star tarot card offers hope, healing, and cosmic renewal. You are supported by divine light."
 },
 {
   id: "the-moon",
@@ -285,7 +306,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a liminal space — between knowing and not knowing. Let the dream world guide you. Clarity will come, but not through logic.",
   health: "Hormonal cycles, sleep, and emotional flow are emphasized. Honor your sensitivity. Protect your peace.",
   mysticMessage: "The path may be unclear — but your intuition sees in the dark.",
-  journalPrompt: "What is my intuition trying to show me beneath the illusion?"
+  journalPrompt: "What is my intuition trying to show me beneath the illusion?",
+  metaDescription: "The Moon reflects mystery, dreams, and illusions. Listen to your intuition and trust your subconscious knowing."
 },
 {
   id: "the-sun",
@@ -300,7 +322,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are aligned. The light within you is leading the way. Trust this moment of clarity and vitality — it’s your time to shine.",
   health: "Vitality surges. Embrace movement, sunshine, and joyful habits. Let your wellness radiate from inner joy.",
   mysticMessage: "Shine without shame. You were born to glow.",
-  journalPrompt: "Where in my life am I ready to radiate fully — without fear of being seen?"
+  journalPrompt: "Where in my life am I ready to radiate fully — without fear of being seen?",
+  metaDescription: "The Sun radiates joy, success, and clarity. Celebrate your light and live vibrantly in your truth."
 },
 
   
@@ -318,7 +341,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re awakening. Shed shame, guilt, or old versions of self. This is the rebirth after reckoning — step into your truth with clarity.",
   health: "Deep healing is possible. Old emotional wounds may rise — release them consciously. Your body and spirit are asking for renewal.",
   mysticMessage: "The trumpet sounds. Awaken to who you were born to be.",
-  journalPrompt: "What truth within me is asking to rise from the ashes of who I used to be?"
+  journalPrompt: "What truth within me is asking to rise from the ashes of who I used to be?",
+  metaDescription: "Judgement invites reflection, awakening, and second chances. Hear the call of your higher purpose."
 },
 {
   id: "the-world",
@@ -333,7 +357,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You have come full circle. This is a moment of deep integration, unity, and purpose. Celebrate all that’s led you here — and all that lies ahead.",
   health: "Stability and balance are here. Let your routines reflect the wholeness you feel. It’s a good time to ground and embody your progress.",
   mysticMessage: "You are the cosmos expressing itself — complete, radiant, and ready.",
-  journalPrompt: "Where do I feel complete — and how do I honor that arrival?"
+  journalPrompt: "Where do I feel complete — and how do I honor that arrival?",
+  metaDescription: "The World card represents completion, mastery, and wholeness. You’ve come full circle — now begin anew."
 },
 {
   id: "ace-of-wands",
@@ -348,7 +373,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a green light from the universe. Follow what excites you. It’s time to begin something bold and beautifully alive.",
   health: "Channel excess energy into movement or creation. Your vitality is rising — let it express through the body.",
   mysticMessage: "The fire has been lit. What you do with it is up to you.",
-  journalPrompt: "What is bursting to life within me — and how can I honor it with action?"
+  journalPrompt: "What is bursting to life within me — and how can I honor it with action?",
+  metaDescription: "The Ace of Wands sparks fresh inspiration, bold ideas, and passionate beginnings. A green light from the universe to go create."
 },
 {
   id: "two-of-wands",
@@ -363,7 +389,8 @@ export const allTarotCards: TarotCard[] = [
   life: "The world is in your hands. Don’t stay stuck in daydreams — map out the next step. You are capable of bold direction.",
   health: "A fresh perspective on wellness is forming. Plan your routines, habits, or healing paths with intention and follow-through.",
   mysticMessage: "You’re not just dreaming — you’re deciding. Step forward.",
-  journalPrompt: "What vision am I holding — and what’s the very first step I can take?"
+  journalPrompt: "What vision am I holding — and what’s the very first step I can take?",
+  metaDescription: "The Two of Wands represents planning, vision, and potential expansion. It’s time to look ahead and move with intention."
 },
 {
   id: "three-of-wands",
@@ -378,7 +405,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Your past actions are setting your future in motion. Expect rewards, movement, or exciting new options. Stay open and alert.",
   health: "Improvements are on the horizon. Celebrate the progress you’ve made and keep your momentum going with aligned action.",
   mysticMessage: "Your energy is reaching beyond your current world. Expansion is in motion.",
-  journalPrompt: "What future am I preparing to meet — and how can I greet it with faith?"
+  journalPrompt: "What future am I preparing to meet — and how can I greet it with faith?",
+  metaDescription: "The Three of Wands shows progress, momentum, and anticipation. Your efforts are unfolding — keep going."
 },
 {
   id: "four-of-wands",
@@ -393,7 +421,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Pause to honor your progress. You’ve created something stable and beautiful — don’t rush past the joy of it.",
   health: "Stability is returning. Focus on environment, joy, and nervous system safety. Healing happens when you feel at home in your life.",
   mysticMessage: "Celebrate what has taken root — joy is sacred too.",
-  journalPrompt: "How can I celebrate my current wins — even the subtle ones?"
+  journalPrompt: "How can I celebrate my current wins — even the subtle ones?",
+  metaDescription: "The Four of Wands is a card of celebration, harmony, and homecoming. Enjoy the blessings of stability and shared joy."
 },
 {
   id: "five-of-wands",
@@ -408,7 +437,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a training ground. Don’t shy away from challenges — they’re strengthening your voice, vision, and self-worth.",
   health: "Stress or energetic conflict may show up in the body. Movement, grounding, and boundary work can help recalibrate.",
   mysticMessage: "Growth sometimes comes through the heat of friction.",
-  journalPrompt: "How can I transform challenge into growth — without losing my center?"
+  journalPrompt: "How can I transform challenge into growth — without losing my center?",
+  metaDescription: "The Five of Wands indicates conflict, competition, and creative tension. Stay centered in the storm."
 },
 {
   id: "six-of-wands",
@@ -423,7 +453,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’ve overcome something — now it’s time to rise with confidence. You deserve to be proud. Others are inspired by your journey.",
   health: "Your strength is returning. Celebrate progress and focus on maintaining momentum. Share what’s worked for you with others.",
   mysticMessage: "You’ve earned this moment — now let it lift you.",
-  journalPrompt: "What part of me is ready to be fully acknowledged and celebrated?"
+  journalPrompt: "What part of me is ready to be fully acknowledged and celebrated?",
+  metaDescription: "The Six of Wands signifies victory, recognition, and rising up. Your efforts are paying off — own your spotlight."
 },
 {
   id: "seven-of-wands",
@@ -438,7 +469,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Not everyone will understand your path — and that’s okay. Hold your position. Your integrity matters more than approval.",
   health: "Support your immune system and energy. Stand up for your well-being — especially if it’s being overlooked.",
   mysticMessage: "Your light may attract challenge — but it’s worth defending.",
-  journalPrompt: "Where in my life do I need to stand firm — even if it’s uncomfortable?"
+  journalPrompt: "Where in my life do I need to stand firm — even if it’s uncomfortable?",
+  metaDescription: "The Seven of Wands speaks of defending your position, standing strong, and staying aligned with your truth."
 },
 
 {
@@ -454,7 +486,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You're in motion — finally. Trust the acceleration. Doors are opening, and the energy supports fast, clear decisions.",
   health: "Improvement may be rapid — especially if you’ve recently changed something. Keep moving and maintain flow. Avoid burnout.",
   mysticMessage: "The way is clear. Act before hesitation slows the magic.",
-  journalPrompt: "What opportunity is asking me to move now — before the window closes?"
+  journalPrompt: "What opportunity is asking me to move now — before the window closes?",
+  metaDescription: "The Eight of Wands brings swift action, communication, and rapid movement. Things are accelerating — stay focused."
 },
 
 {
@@ -470,7 +503,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’ve been through the fire. Your soul is strong — even if weary. This is the moment to breathe, regroup, and prepare to rise again.",
   health: "Fatigue may be present. Listen to your limits. Rest is a form of resilience — not weakness.",
   mysticMessage: "You’re not broken — you’re battle-tested and brave.",
-  journalPrompt: "How can I honor my inner warrior — without pushing past my own limits?"
+  journalPrompt: "How can I honor my inner warrior — without pushing past my own limits?",
+  metaDescription: "The Nine of Wands represents resilience, grit, and preparation. You’re almost there — hold steady."
 },
 {
   id: "ten-of-wands",
@@ -485,7 +519,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’ve come far, but the journey has become heavy. It’s time to lay down what no longer serves. Rest, delegate, simplify.",
   health: "Back pain, fatigue, or stress overload could be signs you're doing too much. Your body is asking for relief — listen.",
   mysticMessage: "Release the burden. You don’t have to carry it all alone.",
-  journalPrompt: "What am I holding that I no longer need — and what would it feel like to set it down?"
+  journalPrompt: "What am I holding that I no longer need — and what would it feel like to set it down?",
+  metaDescription: "The Ten of Wands shows burdens, overwhelm, and the weight of responsibility. Time to delegate or release what drains you."
 },
 {
   id: "page-of-wands",
@@ -500,7 +535,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a time of exploration and spark. Let your inner adventurer guide you. New paths will open when you follow your excitement.",
   health: "Energy is rising — move, stretch, explore. Try something new that brings joy to your body and spirit.",
   mysticMessage: "Your spark is sacred — nurture it with joy, not pressure.",
-  journalPrompt: "What am I excited to try — even if I have no idea where it will lead?"
+  journalPrompt: "What am I excited to try — even if I have no idea where it will lead?",
+  metaDescription: "The Page of Wands is youthful energy, curiosity, and the spirit of discovery. Follow your spark with openness."
 },
 {
   id: "knight-of-wands",
@@ -515,7 +551,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are being asked to follow your fire — even if it scares you. Let desire drive, but check in with your deeper why.",
   health: "Channel energy into physical movement or goal-setting. But don’t overdo it — balance impulse with endurance.",
   mysticMessage: "Move boldly, but not blindly. Your fire is a gift — learn to direct it.",
-  journalPrompt: "Where am I being called to leap — and what will keep me centered as I fly?"
+  journalPrompt: "Where am I being called to leap — and what will keep me centered as I fly?",
+  metaDescription: "The Knight of Wands is adventure, drive, and fiery ambition. Charge forward — but don’t burn out."
 },
 {
   id: "queen-of-wands",
@@ -530,7 +567,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is your permission to take up space. Lead with charisma, intuition, and creative confidence. You light up every room you enter.",
   health: "Prioritize practices that energize and uplift. Embodiment work, creative expression, or energetic healing can support your radiance.",
   mysticMessage: "Your presence is power. Own it fully.",
-  journalPrompt: "How would I show up if I trusted my own fire completely?"
+  journalPrompt: "How would I show up if I trusted my own fire completely?",
+  metaDescription: "The Queen of Wands exudes confidence, magnetism, and creative leadership. Command your space with grace."
 },
 {
   id: "king-of-wands",
@@ -545,7 +583,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card calls you to own your place as a creative force. Act with intention. Lead with heart. Build what matters.",
   health: "Maintain strong energy through focus, discipline, and passion. Don’t neglect your inner fire — keep it burning steadily.",
   mysticMessage: "You were born to lead something only you can see. Begin now.",
-  journalPrompt: "What vision do I carry — and how can I start living it out loud?"
+  journalPrompt: "What vision do I carry — and how can I start living it out loud?",
+  metaDescription: "The King of Wands embodies visionary leadership, courage, and charisma. Lead with heart and conviction."
 },
 {
   id: "ace-of-cups",
@@ -560,7 +599,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is the beginning of emotional healing, intuitive awakening, or spiritual joy. Let softness lead. Trust the tenderness that rises.",
   health: "Healing is flowing in. Focus on hydration, emotional release, and nourishing connection. Rest near water or in beauty.",
   mysticMessage: "Your heart is a chalice — what do you choose to pour into it?",
-  journalPrompt: "What is ready to open in my heart — and what would it feel like to receive it fully?"
+  journalPrompt: "What is ready to open in my heart — and what would it feel like to receive it fully?",
+  metaDescription: "The Ace of Cups overflows with love, emotion, and divine connection. Open your heart to joy and healing."
 },
 {
   id: "two-of-cups",
@@ -575,7 +615,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re learning how to truly meet another — and yourself — with compassion. Healing happens in connection.",
   health: "Relationships impact your well-being. Seek support, touch, shared joy. Emotional connection is medicine.",
   mysticMessage: "Love is not a transaction — it’s a meeting of hearts. Let yourself be met.",
-  journalPrompt: "How can I show up in deeper harmony — with myself and those I love?"
+  journalPrompt: "How can I show up in deeper harmony — with myself and those I love?",
+  metaDescription: "The Two of Cups represents union, partnership, and heartfelt connection. A mirror of mutual love and respect."
 },
 {
   id: "three-of-cups",
@@ -590,7 +631,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Let your heart dance with others. Community and connection are healing. Say yes to shared experiences that light you up.",
   health: "Emotional and social nourishment are vital now. Spend time with those who lift your spirit. Play is medicine.",
   mysticMessage: "Joy shared is joy multiplied. Let the good in.",
-  journalPrompt: "Who helps me feel free and celebrated — and how can I connect with them more deeply?"
+  journalPrompt: "Who helps me feel free and celebrated — and how can I connect with them more deeply?",
+  metaDescription: "The Three of Cups celebrates friendship, sisterhood, and joyful reunion. A toast to shared love and laughter."
 },
 {
   id: "four-of-cups",
@@ -605,7 +647,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a moment of emotional pause. Let yourself rest — but stay open to the quiet invitations the universe is making.",
   health: "Emotional fatigue may be present. Reconnect with yourself through stillness, meditation, and gentle self-care.",
   mysticMessage: "A new blessing may be closer than you think. Look again.",
-  journalPrompt: "What emotion am I resisting — and what might happen if I welcomed it in?"
+  journalPrompt: "What emotion am I resisting — and what might happen if I welcomed it in?",
+  metaDescription: "The Four of Cups suggests introspection, emotional withdrawal, or apathy. What divine gift are you overlooking?"
 },
 {
   id: "five-of-cups",
@@ -620,7 +663,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Grief is sacred. Let it move through you. But don’t forget — the story isn’t over. Healing and hope still stand behind you.",
   health: "Emotional processing is vital. Tears are release. Let yourself feel fully — and then reach for what supports you now.",
   mysticMessage: "What’s gone may hurt — but what remains still holds love.",
-  journalPrompt: "What am I grieving — and what might still be waiting for me behind the pain?"
+  journalPrompt: "What am I grieving — and what might still be waiting for me behind the pain?",
+  metaDescription: "The Five of Cups shows grief, disappointment, or emotional loss. Yet, not all is gone — hope remains behind you."
 },
 {
   id: "six-of-cups",
@@ -635,7 +679,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a moment to honor the past, but not get stuck there. Let joy, innocence, and play return to your daily experience.",
   health: "Childlike joy is medicine. Reconnect with activities that used to make you feel alive and free. Healing may come through the inner child.",
   mysticMessage: "What once brought you joy still lives within you — go visit it.",
-  journalPrompt: "What memory still holds light for me — and how can I let it bloom again now?"
+  journalPrompt: "What memory still holds light for me — and how can I let it bloom again now?",
+  metaDescription: "The Six of Cups returns you to nostalgia, innocence, and childhood joy. Connect with the simple heart again."
 },
 {
   id: "seven-of-cups",
@@ -650,7 +695,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Imagination is powerful, but not all dreams are meant to be lived. This is a time to sort the gold from the glitter.",
   health: "Overwhelm or confusion may be clouding your judgment. Get grounded. Trust your gut — not just your fantasies.",
   mysticMessage: "You can dream anything — but you must choose something.",
-  journalPrompt: "What dream or desire is real for me — and what’s just a tempting distraction?"
+  journalPrompt: "What dream or desire is real for me — and what’s just a tempting distraction?",
+  metaDescription: "The Seven of Cups is illusion, fantasy, and overwhelming choices. Ground yourself before deciding."
 },
 {
   id: "eight-of-cups",
@@ -665,7 +711,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a soul journey — one that requires leaving comfort for truth. You’re not running away. You’re walking toward more.",
   health: "Listen to emotional signals. When something feels off, trust your instinct and make room for change — especially in relationships or environment.",
   mysticMessage: "Leave the empty cup. Seek the stream that fills you.",
-  journalPrompt: "What am I being asked to leave — not out of failure, but wisdom?"
+  journalPrompt: "What am I being asked to leave — not out of failure, but wisdom?",
+  metaDescription: "The Eight of Cups speaks of emotional departure, soul-searching, and inner callings. Leave what no longer fulfills."
 },
 {
   id: "nine-of-cups",
@@ -680,7 +727,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a moment of sweet emotional arrival. It’s okay to bask in gratitude. Let yourself enjoy the pleasure of now.",
   health: "Pleasure supports your healing. Focus on what nourishes you — body and soul. Emotional contentment boosts physical vitality.",
   mysticMessage: "This is the wish granted. Now receive it with an open heart.",
-  journalPrompt: "What feels like true abundance to me — and how can I celebrate it today?"
+  journalPrompt: "What feels like true abundance to me — and how can I celebrate it today?",
+  metaDescription: "The Nine of Cups is the wish card — contentment, pleasure, and satisfaction. Enjoy what you’ve created."
 },
 {
   id: "ten-of-cups",
@@ -695,7 +743,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are surrounded by love — or being called to create it consciously. Harmony, not perfection, is the key. Cherish what’s real.",
   health: "Emotional wholeness supports physical wellness. Family, chosen family, and heartfelt relationships are part of your healing path.",
   mysticMessage: "Love is the true legacy. Build your life around what matters most.",
-  journalPrompt: "What does true emotional fulfillment feel like — and how can I welcome more of it?"
+  journalPrompt: "What does true emotional fulfillment feel like — and how can I welcome more of it?",
+  metaDescription: "The Ten of Cups radiates joy, family harmony, and emotional fulfillment. A rainbow after the storm."
 },
 {
   id: "page-of-cups",
@@ -710,7 +759,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a time of gentle beginnings. Listen to your dreams, your heart, and your inner child. Something tender is blooming.",
   health: "Emotional sensitivity may be heightened. Art, journaling, and expression can help process and restore balance.",
   mysticMessage: "Your heart is speaking — dare to listen with curiosity.",
-  journalPrompt: "What would I hear if I let my heart speak freely — without judgment?"
+  journalPrompt: "What would I hear if I let my heart speak freely — without judgment?",
+  metaDescription: "The Page of Cups is gentle wonder, artistic inspiration, and messages from the heart. Stay open to surprise."
 },
 {
   id: "knight-of-cups",
@@ -725,7 +775,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re on a soulful quest. Beauty, love, and inspiration guide you now. Let your intuition lead, even if the path feels dreamy.",
   health: "Pay attention to emotional signals in the body. Water, music, and gentle practices can support inner peace.",
   mysticMessage: "The quest begins — led not by logic, but by the heart’s song.",
-  journalPrompt: "What beautiful vision is calling to me — and am I ready to follow it?"
+  journalPrompt: "What beautiful vision is calling to me — and am I ready to follow it?",
+  metaDescription: "The Knight of Cups rides on romance, beauty, and emotional pursuit. Follow your heart’s quest."
 },
 {
   id: "queen-of-cups",
@@ -740,7 +791,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a time for inner listening. Emotions are sacred guides. Make space for stillness, ritual, and introspection.",
   health: "Water, rest, and emotional balance are key. Protect your sensitivity and stay connected to your own needs.",
   mysticMessage: "Still waters run deep — trust the knowing beneath the surface.",
-  journalPrompt: "How can I hold space for my emotions — the way I would for someone I deeply love?"
+  journalPrompt: "How can I hold space for my emotions — the way I would for someone I deeply love?",
+  metaDescription: "The Queen of Cups is empathy, intuition, and emotional depth. She feels deeply and loves purely."
 },
 {
   id: "king-of-cups",
@@ -755,7 +807,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are mastering emotional intelligence. Stay steady, even as others swirl around you. Your heart is wise — lead from it.",
   health: "Emotional health impacts physical well-being. Practice breathwork, therapy, or other methods that regulate and ground you.",
   mysticMessage: "Lead with calm compassion — your presence heals more than you know.",
-  journalPrompt: "What would it look like to trust my emotions — without letting them rule me?"
+  journalPrompt: "What would it look like to trust my emotions — without letting them rule me?",
+  metaDescription: "The King of Cups blends emotional mastery with compassion. A calm leader who rules the heart with wisdom."
 },
 {
   id: "ace-of-swords",
@@ -770,7 +823,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re being handed a sword of truth. Use it to cut through illusion, fear, or old beliefs. Clarity is your ally now.",
   health: "Mental clarity and focus are returning. Clear your space, simplify your inputs, and prioritize your peace of mind.",
   mysticMessage: "Truth is your sword — speak it, live it, honor it.",
-  journalPrompt: "What truth wants to be spoken — even if it changes everything?"
+  journalPrompt: "What truth wants to be spoken — even if it changes everything?",
+  metaDescription: "The Ace of Swords cuts through confusion with truth, clarity, and insight. A breakthrough is at hand."
 },
 {
   id: "two-of-swords",
@@ -785,7 +839,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re suspended between options. This pause is sacred. Trust that clarity will come once you stop forcing an answer.",
   health: "Emotional tension may show up as headaches or mental fatigue. Rest your mind and ground your nervous system before acting.",
   mysticMessage: "Stillness brings truth. Let your mind settle before choosing.",
-  journalPrompt: "What is my intuition saying — beneath the noise of overthinking?"
+  journalPrompt: "What is my intuition saying — beneath the noise of overthinking?",
+  metaDescription: "The Two of Swords reflects indecision, duality, and a need to trust your inner wisdom. The answer lies within."
 },
 {
   id: "three-of-swords",
@@ -800,7 +855,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card reminds you that some pain is part of awakening. Feel it. Speak it. Release it. There’s a clearing on the other side.",
   health: "Emotional wounds may be surfacing in physical form. Address root causes, not just symptoms. Therapy or journaling may support healing.",
   mysticMessage: "Broken hearts reveal hidden truths. Let them speak.",
-  journalPrompt: "What truth is breaking me open — and how can I honor the healing it brings?"
+  journalPrompt: "What truth is breaking me open — and how can I honor the healing it brings?",
+  metaDescription: "The Three of Swords brings sorrow, heartbreak, or painful truth. Feel to heal — and begin again."
 },
 {
   id: "four-of-swords",
@@ -815,7 +871,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are being asked to pause. Let the world go quiet so your soul can speak. Recovery is part of growth.",
   health: "Prioritize sleep, solitude, and nervous system repair. Your energy is returning — give it time to rebuild.",
   mysticMessage: "Rest is not retreat — it’s sacred strategy.",
-  journalPrompt: "What part of me is calling for silence, space, and stillness?"
+  journalPrompt: "What part of me is calling for silence, space, and stillness?",
+  metaDescription: "The Four of Swords offers rest, recovery, and mental peace. Retreat to restore your spirit."
 },
 {
   id: "five-of-swords",
@@ -830,7 +887,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card asks you to reflect on how you engage with conflict. Not all battles are worth your energy. Choose discernment over domination.",
   health: "Mental stress, migraines, or exhaustion may be signs of emotional overexertion. Step back. Reframe the issue. Breathe.",
   mysticMessage: "You can win the fight — and still lose your peace. Choose wisely.",
-  journalPrompt: "Where am I fighting to be right — and what would surrender look like instead?"
+  journalPrompt: "Where am I fighting to be right — and what would surrender look like instead?",
+  metaDescription: "The Five of Swords shows conflict, ego clashes, or hollow victory. Is the win worth the cost?"
 },
 {
   id: "six-of-swords",
@@ -845,7 +903,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is sacred passage — from confusion to clarity, storm to calm. You’re not alone. Spirit guides you forward now.",
   health: "You’re emerging from a time of difficulty. Continue with steady, gentle support — body, mind, and heart are all adjusting.",
   mysticMessage: "The worst is behind you. Keep sailing toward peace.",
-  journalPrompt: "What am I ready to move on from — and what healing do I need for the journey?"
+  journalPrompt: "What am I ready to move on from — and what healing do I need for the journey?",
+  metaDescription: "The Six of Swords marks transition, healing journeys, and moving on. Leave the storm behind."
 },
 {
   id: "seven-of-swords",
@@ -860,7 +919,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card asks you to examine your motives. Are you being clever — or just escaping discomfort? Authenticity is your guide.",
   health: "Avoidance or secrecy around health issues could be slowing healing. Face what’s been hidden. Truth is the first medicine.",
   mysticMessage: "You don’t need to hide to be safe. Integrity is protection.",
-  journalPrompt: "Where am I not being fully honest — and why am I afraid to be?"
+  journalPrompt: "Where am I not being fully honest — and why am I afraid to be?",
+  metaDescription: "The Seven of Swords reveals secrets, strategy, or betrayal. Choose wisdom over trickery."
 },
 {
   id: "eight-of-swords",
@@ -875,7 +935,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Fear is fogging your vision. The cage is mental. Breathe, reframe, and remember: you hold the key.",
   health: "Anxiety, overwhelm, or overthinking may be contributing to stagnation. Gentle movement and mental release can help you feel free again.",
   mysticMessage: "You are not truly stuck — only seeing through fear. Look again.",
-  journalPrompt: "What thought is keeping me small — and what truth could set me free?"
+  journalPrompt: "What thought is keeping me small — and what truth could set me free?",
+  metaDescription: "The Eight of Swords symbolizes mental entrapment and self-doubt. Freedom begins in the mind."
 },
 {
   id: "nine-of-swords",
@@ -890,7 +951,8 @@ export const allTarotCards: TarotCard[] = [
   life: "The monsters in the mind feel real — but they’re not the full truth. Reach out. You’re not alone in the dark.",
   health: "Sleep issues, anxiety, or worry may be affecting your body. Gentle rituals, nervous system care, and kindness are key.",
   mysticMessage: "Your fears are loud — but your truth is louder. Breathe into it.",
-  journalPrompt: "What fear keeps visiting me at night — and what truth do I need to whisper back?"
+  journalPrompt: "What fear keeps visiting me at night — and what truth do I need to whisper back?",
+  metaDescription: "The Nine of Swords reflects anxiety, sleepless nights, and inner torment. Name your fears to disarm them."
 },
 {
   id: "ten-of-swords",
@@ -905,7 +967,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is rock bottom — but also the ground beneath your feet. Let it be your turning point. The light is rising.",
   health: "A full reset is needed. Give your body time to release accumulated tension and trauma. Let rest rebuild you.",
   mysticMessage: "It’s over now. Let yourself rise from what’s been laid to rest.",
-  journalPrompt: "What final ending must I accept — so something truer can begin?"
+  journalPrompt: "What final ending must I accept — so something truer can begin?",
+  metaDescription: "The Ten of Swords signals painful endings and rock bottom. The worst has passed — now rise."
 },
 {
   id: "page-of-swords",
@@ -920,7 +983,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Your mind is sharp. Now’s the time to explore, question, and experiment. Curiosity leads to clarity.",
   health: "Pay attention to your thoughts. Your mindset shapes your vitality. Use journaling, therapy, or learning to rewire what isn’t serving.",
   mysticMessage: "Your mind is a sword — use it to carve new truth, not chase old fears.",
-  journalPrompt: "What new idea or truth am I ready to explore with an open mind?"
+  journalPrompt: "What new idea or truth am I ready to explore with an open mind?",
+  metaDescription: "The Page of Swords is curiosity, new ideas, and mental agility. Observe, learn, and question everything."
 },
 {
   id: "knight-of-swords",
@@ -935,7 +999,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Your convictions are strong. Use that clarity wisely — but stay open to other perspectives. Truth doesn’t need force to stand strong.",
   health: "Mental overexertion may cause burnout. Pace your mind. Clarity comes not only from speed, but also from pause.",
   mysticMessage: "Let your truth be swift — and also kind.",
-  journalPrompt: "Where am I rushing to be heard — and what might change if I paused to truly listen?"
+  journalPrompt: "Where am I rushing to be heard — and what might change if I paused to truly listen?",
+  metaDescription: "The Knight of Swords charges forward with intellect, speed, and fierce determination. Watch your tone and timing."
 },
 {
   id: "queen-of-swords",
@@ -950,7 +1015,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’ve earned your wisdom. Now speak from it — not bitterness, but grounded knowing. Boundaries are sacred.",
   health: "Clear your mind, organize your priorities, and detach from draining emotional entanglements. Mental clarity supports full wellness.",
   mysticMessage: "Speak the truth. Even if your voice trembles — let it be clear.",
-  journalPrompt: "What truth am I ready to own — with compassion and confidence?"
+  journalPrompt: "What truth am I ready to own — with compassion and confidence?",
+  metaDescription: "The Queen of Swords stands for clarity, honesty, and sharp perception. Speak your truth with compassion."
 },
 {
   id: "king-of-swords",
@@ -965,7 +1031,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’ve cultivated sharp discernment. Don’t let emotion cloud your clarity. But also — don’t weaponize your intellect. Lead with integrity.",
   health: "Mental structure supports healing. Try breathwork, CBT, or mental clarity practices to support emotional balance.",
   mysticMessage: "Wisdom is not just what you know — it’s how you apply it.",
-  journalPrompt: "How can I lead my life from clarity — not control?"
+  journalPrompt: "How can I lead my life from clarity — not control?",
+  metaDescription: "The King of Swords embodies reason, integrity, and authority. Lead with logic and truth."
 },
 {
   id: "ace-of-pentacles",
@@ -980,7 +1047,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is the seed of prosperity. Your actions today will shape your foundation tomorrow. Nurture it with presence.",
   health: "Grounding, nutrition, and physical care are key. Start simple — habits grow slowly, but surely, into wholeness.",
   mysticMessage: "What begins now can become something lasting — if you commit to its care.",
-  journalPrompt: "What new foundation am I ready to plant — and how can I tend it with love?"
+  journalPrompt: "What new foundation am I ready to plant — and how can I tend it with love?",
+  metaDescription: "The Ace of Pentacles offers grounded beginnings, prosperity, and tangible blessings. Plant the seed of abundance."
 },
 {
   id: "two-of-pentacles",
@@ -995,7 +1063,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card invites harmony in motion. Don't aim for perfect balance — aim for presence amid the flow.",
   health: "Work-life imbalance could be taking a toll. Recalibrate. Add grounding routines and simplify where possible.",
   mysticMessage: "You don’t need to do everything — just what truly matters.",
-  journalPrompt: "Where am I stretched too thin — and what can I let go to restore harmony?"
+  journalPrompt: "Where am I stretched too thin — and what can I let go to restore harmony?",
+  metaDescription: "The Two of Pentacles represents balance, flexibility, and juggling priorities. Flow with life's ups and downs."
 },
 {
   id: "three-of-pentacles",
@@ -1010,7 +1079,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is the time to work toward mastery — not alone, but in community. Create something lasting with aligned people.",
   health: "Work with practitioners, guides, or a support system. Your growth is supported when you don’t go it alone.",
   mysticMessage: "Great work takes great unity. Honor every brick laid — and those who lay them beside you.",
-  journalPrompt: "Who are my true collaborators — and how can we build something beautiful together?"
+  journalPrompt: "Who are my true collaborators — and how can we build something beautiful together?",
+  metaDescription: "The Three of Pentacles signifies collaboration, skill, and shared vision. Progress comes from teamwork."
 },
 {
   id: "four-of-pentacles",
@@ -1025,7 +1095,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Security is sacred — but clinging too tightly can create stagnation. Trust that you can hold what matters without gripping in fear.",
   health: "Tension may manifest in the body. Breathwork and somatic release can help create space for new energy to flow.",
   mysticMessage: "You are safe — even if you let go.",
-  journalPrompt: "Where am I clinging — and what would looseness feel like instead?"
+  journalPrompt: "Where am I clinging — and what would looseness feel like instead?",
+  metaDescription: "The Four of Pentacles warns of holding too tightly — to money, fear, or control. True security comes from flow."
 },
 {
   id: "five-of-pentacles",
@@ -1040,7 +1111,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You may feel shut out — emotionally, spiritually, or materially. But you are not alone. Seek warmth, support, and shelter in community.",
   health: "Fatigue or illness may be tied to emotional depletion. Rest. Nourish. Accept support with grace.",
   mysticMessage: "Even in your lowest moment — the light is still glowing nearby. Look up.",
-  journalPrompt: "What support am I ready to receive — even if my pride resists it?"
+  journalPrompt: "What support am I ready to receive — even if my pride resists it?",
+  metaDescription: "The Five of Pentacles shows hardship, loss, or isolation. Support is closer than you think — reach out."
 },
 {
   id: "six-of-pentacles",
@@ -1055,7 +1127,8 @@ export const allTarotCards: TarotCard[] = [
   life: "What you give comes back. Check where your generosity flows — and where you might need to receive with more openness.",
   health: "Energetic imbalance may be present. Give to yourself what you give to others. Rest is not a reward — it’s required.",
   mysticMessage: "Life flows when generosity meets boundaries. Let the current move both ways.",
-  journalPrompt: "Where am I giving too much — or not allowing myself to receive enough?"
+  journalPrompt: "Where am I giving too much — or not allowing myself to receive enough?",
+  metaDescription: "The Six of Pentacles reflects giving and receiving, generosity, and shared wealth. Balance flows in exchange."
 },
 {
   id: "seven-of-pentacles",
@@ -1070,7 +1143,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You’re in a cycle of reflection. Not all slow growth is stagnation. Let long-term vision guide you now.",
   health: "A lifestyle shift may be necessary for sustainable wellness. What’s working? What’s draining? Realign gently.",
   mysticMessage: "Patience isn’t waiting — it’s preparing for harvest.",
-  journalPrompt: "What long-term vision am I tending — and is it still worth the effort?"
+  journalPrompt: "What long-term vision am I tending — and is it still worth the effort?",
+  metaDescription: "The Seven of Pentacles is patience, long-term investment, and reassessment. Tend your garden with care."
 },
 {
   id: "eight-of-pentacles",
@@ -1085,7 +1159,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is your workshop season. Each action, though small, is shaping your future. Keep showing up — it matters.",
   health: "Small, repeated choices shape your vitality. Focus on systems, routines, and tiny daily wins. They add up.",
   mysticMessage: "Mastery lives in the mundane. Let devotion be your magic.",
-  journalPrompt: "What am I ready to build through steady, soul-filled practice?"
+  journalPrompt: "What am I ready to build through steady, soul-filled practice?",
+  metaDescription: "The Eight of Pentacles is mastery, diligence, and focused effort. Your craft is refining — keep going."
 },
 {
   id: "nine-of-pentacles",
@@ -1100,7 +1175,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is a time of grace, refinement, and sovereign power. Own your achievements and rest in your self-worth.",
   health: "Well-being is a ritual. Let beauty, nature, and gentle structure guide your vitality now.",
   mysticMessage: "You are already enough. Everything else is decoration.",
-  journalPrompt: "Where can I celebrate my independence — without apology or explanation?"
+  journalPrompt: "Where can I celebrate my independence — without apology or explanation?",
+  metaDescription: "The Nine of Pentacles celebrates independence, self-worth, and earned luxury. Bask in your cultivated success."
 },
 {
   id: "ten-of-pentacles",
@@ -1115,7 +1191,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is about roots — home, ancestry, tradition. Honor where you come from as you build what comes next.",
   health: "Focus on long-term wellness — not quick fixes. Think in decades. What practices will carry you into old age with grace?",
   mysticMessage: "Legacy isn’t built in a moment — it’s built in every moment.",
-  journalPrompt: "What does lasting abundance look like — and how am I creating it now?"
+  journalPrompt: "What does lasting abundance look like — and how am I creating it now?",
+  metaDescription: "The Ten of Pentacles is legacy, wealth, and family foundations. Long-term stability is yours."
 },
 {
   id: "page-of-pentacles",
@@ -1130,7 +1207,8 @@ export const allTarotCards: TarotCard[] = [
   life: "Now is the time to learn, plant, and nurture. Your actions are forming strong roots. Go slow, stay steady.",
   health: "Focus on routines, planning, and consistency. Your body wants simplicity and sustainable care.",
   mysticMessage: "Begin as a student — and let your devotion shape your future.",
-  journalPrompt: "What new journey am I ready to commit to — one grounded in real growth?"
+  journalPrompt: "What new journey am I ready to commit to — one grounded in real growth?",
+  metaDescription: "The Page of Pentacles brings study, opportunity, and grounded curiosity. A seed of success is being planted."
 },
 {
   id: "knight-of-pentacles",
@@ -1145,7 +1223,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This is the long road — and you’re walking it well. Trust the pace. Consistency is your magic now.",
   health: "Sustainable habits are more powerful than short bursts. Build a foundation — and stick to it.",
   mysticMessage: "Faith in the process creates results worth waiting for.",
-  journalPrompt: "What am I tending daily — and how does it reflect the life I’m creating?"
+  journalPrompt: "What am I tending daily — and how does it reflect the life I’m creating?",
+  metaDescription: "The Knight of Pentacles is persistence, loyalty, and steady progress. Keep going — even slow steps matter."
 },
 {
   id: "queen-of-pentacles",
@@ -1160,7 +1239,8 @@ export const allTarotCards: TarotCard[] = [
   life: "This card invites you to root into safety, softness, and generosity. Build your life like a sacred garden — with care and strength.",
   health: "Care for your body like a beloved child. Nourishment, routine, and rest are sacred acts.",
   mysticMessage: "Prosperity is the result of love made practical.",
-  journalPrompt: "How can I nourish the physical and emotional roots of my well-being?"
+  journalPrompt: "How can I nourish the physical and emotional roots of my well-being?",
+  metaDescription: "The Queen of Pentacles nurtures abundance, home, and practicality. Grounded love creates lasting beauty."
 },
 {
   id: "king-of-pentacles",
@@ -1175,7 +1255,8 @@ export const allTarotCards: TarotCard[] = [
   life: "You are the rock — steady, wise, and rooted. Enjoy the fruits of your labor, but remember: wealth is best shared and stewarded with heart.",
   health: "Grounded routines and holistic habits serve you now. Your physical and financial health are intertwined — nurture both wisely.",
   mysticMessage: "True richness lies not just in what you have — but in how you hold it.",
-  journalPrompt: "How can I embody steady, wise leadership — and what legacy am I choosing to create?"
+  journalPrompt: "How can I embody steady, wise leadership — and what legacy am I choosing to create?",
+  metaDescription: "The King of Pentacles represents success, stability, and wise leadership. Prosper through patience and vision."
 },
 
 ];
