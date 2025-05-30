@@ -39,6 +39,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 }
 
 export default function CardPage({ params }: { params: { slug: string } }) {
+
   const card = allTarotCards.find(c => c.slug === params.slug);
   if (!card) return null;
 
