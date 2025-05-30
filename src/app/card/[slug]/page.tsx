@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Section from '@/components/Section';
 import { useParams } from 'next/navigation';
 
-export { generateMetadata } from './metadata';
+
 
 
 export default function CardDetailPage() {
