@@ -18,6 +18,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="canonical" href="https://mysticaltarotgarden.netlify.app/" />
+        <meta name="msvalidate.01" content="A512B18A0878B1D6F1A0E29A9D03BBC1" />
 
         <title>Mystical Nouveau Tarot</title>
         <meta name="description" content="Experience the magic of tarot through mystical nouveau art" />
