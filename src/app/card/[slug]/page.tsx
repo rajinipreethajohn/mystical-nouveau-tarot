@@ -2,7 +2,6 @@ import { allTarotCards } from '@/lib/tarot-data';
 import CardDetailClient from './CardDetailClient';
 import { Metadata } from 'next';
 
-
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const card = allTarotCards.find(c => c.slug === params.slug);
 
@@ -45,7 +44,7 @@ type Props = {
   };
 };
 
-export default async function CardPage({ params }: Props) {
+export default function CardPage({ params }: Props) {
   const card = allTarotCards.find(c => c.slug === params.slug);
   if (!card) return null;
 
