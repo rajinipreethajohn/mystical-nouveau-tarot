@@ -2,3 +2,10 @@
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml"
+
+[[redirects]]
+  from = "https://www.mysticaltarotgarden.netlify.app/*"
+  to = "https://mysticaltarotgarden.netlify.app/:splat"
+  status = 301
+  force = true
+
