@@ -76,6 +76,8 @@ export default function RootLayout({
             />
           </>
         )}
+        {/* 📊 Ahref Analytics */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="63cPJ2Izcts1+/UV6sQqSg" async></script>
       </head>
       <body className="antialiased">
         <NavBar />
