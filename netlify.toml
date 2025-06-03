@@ -4,8 +4,14 @@
     Content-Type = "application/xml"
 
 [[redirects]]
-  from = "https://www.mysticaltarotgarden.netlify.app/*"
+  from = "http://mysticaltarotgarden.netlify.app/*"
   to = "https://mysticaltarotgarden.netlify.app/:splat"
   status = 301
   force = true
 
+[[redirects]]
+  from = "/*"
+  to = "https://mysticaltarotgarden.netlify.app/:splat"
+  status = 301
+  force = true
+  conditions = { Host = "www.mysticaltarotgarden.netlify.app" }

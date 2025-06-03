@@ -1,7 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Disallow:
+# Host
+Host: https://mysticaltarotgarden.netlify.app
 
+# Sitemaps
 Sitemap: https://mysticaltarotgarden.netlify.app/sitemap.xml
